@@ -1,0 +1,28 @@
+public class Insertion {
+  public static void insertionSort(int[] array) {
+      int i,tempValue;
+      for (int j = 1; j < array.length; j++) {
+            tempValue = array[j];
+            i=j;
+            while (i>0&&array[i-1]>tempValue) {
+                  array[i] = array[i-1];
+                  i--;
+            }
+            array[i] = tempValue;
+      }
+     for(int x=0;x<array.length;x++){
+         System.out.print(""+array[x]);
+     } 
+}
+
+    public static void main(String [] args){
+        int arr[]=new int[5];
+        Scanner input=new Scanner(System.in);
+        for(int i=0;i<5;i++){
+            arr[i]=input.nextInt();
+
+        }
+     insertionSort(arr);       
+    }
+
+}
