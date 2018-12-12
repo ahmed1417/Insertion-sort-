@@ -3,7 +3,7 @@ public void insertionSort (int a[])
         int in,out,temp;
         for (out=1 ; out <a.lenght ; out++)
         temp = a[out];
-              for (int =out ; in>0 && a [in-1]>= temp; in-- )
+              for (in =out ; in>0 && a [in-1]>= temp; in-- )
               {
                     a [in] = a[in-1];
               }
